@@ -15,3 +15,11 @@ Vamos a esperar a que se nos indique cual es el rumbo del proyecto.
 - ¿Que dificultades hemos tenido?
 Ninguna.
 
+## 26/04/21
+- ¿Qué hemos hecho?
+Seleccionamos nuestra cancion para el repositorio grupal(Midi_Ascii_Party_Rebelde), además agregamos nuestra cancion en formato MIDII y su letra.
+- ¿Que vamos a hacer?
+Plantearemos la creacion de nuestro proyecto respecto al repositorio grupal(Midi_Ascii_Party_Rebelde).
+- ¿Que dificultades hemos tenido?
+Ninguna.
+
