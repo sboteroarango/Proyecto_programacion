@@ -23,3 +23,12 @@ Plantearemos la creacion de nuestro proyecto respecto al repositorio grupal(Midi
 - ¿Que dificultades hemos tenido?
 Ninguna.
 
+## 27/04/21
+- ¿Qué hemos hecho?
+Planteamos efectivamente la creacion de nuestro proyecto y agregamos la ruta de nuestra cancion "dame amor" al archivo de letras del repositorio grupal.
+- ¿Que vamos a hacer?
+Vamos a empezar las primeras etapas de nuestro proyecto que tratara de un menu de canciones en donde el usuario puede eligir su lista de reproduccion y , las canciones de la lista, se empiezan a reproducir.
+- ¿Que dificultades hemos tenido?
+Nos falta conocimiento de como integrar nuestro proyecto con el repositorio grupal
+
+
