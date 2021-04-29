@@ -32,3 +32,10 @@ Vamos a empezar las primeras etapas de nuestro proyecto que tratara de un menu d
 Nos falta conocimiento de como integrar nuestro proyecto con el repositorio grupal
 
 
+## 29/04/21
+- ¿Qué hemos hecho?
+Agregamos unas de las funciones que buscabamos para la lista de reproduccio.
+- ¿Que vamos a hacer?
+Buscar la manera de imprimir un mensaje en caso de que la lista sea mas larga que la cantidad de canciones y tambien buscaremos la manera de que hacer que el proceso que actualmente esta en el main sea realizado por una funcion
+- ¿Que dificultades hemos tenido?
+Nos falta conocimiento de como integrar nuestro proyecto con el repositorio grupal, nuevamente.
