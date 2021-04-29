@@ -1,5 +1,4 @@
 import java.util.Scanner;
-public class Menu{
     public static void menu(){
         System.out.println("1. A dios le pido");
         System.out.println("2. Cielo");
@@ -26,14 +25,22 @@ public class Menu{
    
     }
     public static int peticiondecanciones(){
-        Scanner datos= new Scanner(System.in);
+        Scanner datos = new Scanner(System.in);
         System.out.print("Ingrese el numero de la cancion: ");
-        int numero_de_cancion=datos.nextInt();
+        int numero_de_cancion = datos.nextInt();
         return numero_de_cancion;
-    }
-    public static void main(String[] args){
+	}
 
- 
+	public static int numero_canciones(){
+		Scanner datos = new Scanner(System.in);
+		System.out.print("Ingrese el numero de canciones que deseas en la lista de reproduccion: ");
+		int numero_canciones_lista = datos.nextInt();
+		return numero_canciones_lista;
+	}
+
+    public static void main(String[] args){
+    	menu();
+    	numero_canciones(); 
 
     }
 }
