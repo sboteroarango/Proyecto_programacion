@@ -1,4 +1,5 @@
 import java.util.Scanner;
+    public class ListaReproduccion{
     public static void menu(){
         System.out.println("1. A dios le pido");
         System.out.println("2. Cielo");
@@ -39,8 +40,7 @@ import java.util.Scanner;
 	}
 
     public static void main(String[] args){
-    	menu();
-    	numero_canciones(); 
+
 
     }
 }
