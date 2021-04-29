@@ -34,12 +34,18 @@ import java.util.Scanner;
 
 	public static int numero_canciones(){
 		Scanner datos = new Scanner(System.in);
-		System.out.print("Ingrese el numero de canciones que deseas en la lista de reproduccion: ");
+		System.out.print("Cuantas canciones desea en su lista de reproduccion: ");
 		int numero_canciones_lista = datos.nextInt();
 		return numero_canciones_lista;
 	}
 
     public static void main(String[] args){
+        menu();
+        int numero_canciones_lista = numero_canciones();
+
+        for(int i=0;i<numero_canciones_lista;i++){
+            peticiondecanciones();
+        }
 
 
     }
