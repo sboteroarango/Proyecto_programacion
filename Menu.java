@@ -23,7 +23,7 @@ public class Menu{
         System.out.println("20. Vivo por ella");
         System.out.println("21. Dame amor");
         System.out.println("22. Lobo hombre en paris");
-        System.out.println("23. Nada valgo sin tu amor");
+   
     }
     public static int peticiondecanciones(){
         Scanner datos= new Scanner(System.in);
