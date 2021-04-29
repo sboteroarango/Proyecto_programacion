@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 public class Menu{
     public static void menu(){
         System.out.println("1. A dios le pido");
@@ -25,9 +25,15 @@ public class Menu{
         System.out.println("22. Lobo hombre en paris");
         System.out.println("23. Nada valgo sin tu amor");
     }
+    public static int peticiondecanciones(){
+        Scanner datos= new Scanner(System.in);
+        System.out.print("Ingrese el numero de la cancion: ");
+        int numero_de_cancion=datos.nextInt();
+        return numero_de_cancion;
+    }
     public static void main(String[] args){
 
-        
+ 
 
     }
 }
