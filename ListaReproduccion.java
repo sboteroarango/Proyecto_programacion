@@ -38,14 +38,15 @@ import java.util.Scanner;
 		int numero_canciones_lista = datos.nextInt();
 		return numero_canciones_lista;
 	}
-
-    public static void main(String[] args){
+    public static void preguntar_segun_canciones_que_quiere(){
         menu();
         int numero_canciones_lista = numero_canciones();
-
         for(int i=0;i<numero_canciones_lista;i++){
             peticiondecanciones();
         }
+    }
+
+    public static void main(String[] args){
 
 
     }
