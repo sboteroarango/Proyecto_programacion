@@ -23,8 +23,8 @@ import java.util.Scanner;
         System.out.println("20. Vivo por ella");
         System.out.println("21. Dame amor");
         System.out.println("22. Lobo hombre en paris");
-   
     }
+
     public static int peticiondecanciones(){
         Scanner datos = new Scanner(System.in);
         System.out.print("Ingrese el numero de la cancion: ");
@@ -38,16 +38,33 @@ import java.util.Scanner;
 		int numero_canciones_lista = datos.nextInt();
 		return numero_canciones_lista;
 	}
-    public static void preguntar_segun_canciones_que_quiere(){
+
+    public static String preguntar_segun_canciones_que_quiere(){
+        String canciones_que_quiere = "";
         menu();
         int numero_canciones_lista = numero_canciones();
         for(int i=0;i<numero_canciones_lista;i++){
-            peticiondecanciones();
+            int numero_de_cancion = peticiondecanciones();
+            switch (numero_de_cancion) {
+
+                case 1:
+                    canciones_que_quiere = canciones_que_quiere.concat("A_Dios_le_pido.mid ");
+                    break;
+                case 2:
+                    canciones_que_quiere = canciones_que_quiere.concat("Cielo.mid ");
+                    break;
+                //hacer esto para todas las 22 canciones
+                
+                default:
+                    System.out.println("Esta cancion no existe");
+                    break;
+            }
         }
+        return canciones_que_quiere;
     }
 
     public static void main(String[] args){
-
-
+        String letra = preguntar_segun_canciones_que_quiere();
+        System.out.println(letra);
     }
 }
