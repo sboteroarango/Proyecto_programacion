@@ -53,8 +53,66 @@ import java.util.Scanner;
                 case 2:
                     canciones_que_quiere = canciones_que_quiere.concat("Cielo.mid ");
                     break;
-                //hacer esto para todas las 22 canciones
-                
+                case 3:
+                    canciones_que_quiere = canciones_que_quiere.concat("Coldplay - Viva La Vida.mid ");
+                    break;
+                case 4:
+                    canciones_que_quiere = canciones_que_quiere.concat("Como_Camaron.mid ");
+                    break;
+                case 5:
+                    canciones_que_quiere = canciones_que_quiere.concat("Cuando_Sea_Grande.mid ");
+                    break;
+                case 6:
+                    canciones_que_quiere = canciones_que_quiere.concat("DMX_-_Party_Up.mid ");
+                    break;
+                case 7:
+                    canciones_que_quiere = canciones_que_quiere.concat("DMX_–_Ruff_Ryders_Anthem.mid ");
+                    break;
+                case 8:
+                    canciones_que_quiere = canciones_que_quiere.concat("En_algun_lugar.mid ");
+                    break;
+                case 9:
+                    canciones_que_quiere = canciones_que_quiere.concat("Friends.mid ");
+                    break;
+                case 10:
+                    canciones_que_quiere = canciones_que_quiere.concat("HEROES_DEL_SILENCIO_-_Maldito_duende.mid ");
+                    break;
+                case 11:
+                    canciones_que_quiere = canciones_que_quiere.concat("La_Gasolina.mid ");
+                    break;
+                case 12:
+                    canciones_que_quiere = canciones_que_quiere.concat("La_camisa_negra.mid ");
+                    break;
+                case 13:
+                    canciones_que_quiere = canciones_que_quiere.concat("Laura.mid ");
+                    break;
+                case 14:
+                    canciones_que_quiere = canciones_que_quiere.concat("Me_gustas_tu.mid ");
+                    break;
+                case 15:
+                    canciones_que_quiere = canciones_que_quiere.concat("Nada_valgo_sin_tu_amor.mid ");
+                    break;
+                case 16:
+                    canciones_que_quiere = canciones_que_quiere.concat("Rayando_el_sol.mid ");
+                    break;
+                case 17:
+                    canciones_que_quiere = canciones_que_quiere.concat("Rosas.mid ");
+                    break;
+                case 18:
+                    canciones_que_quiere = canciones_que_quiere.concat("Video_Game_Themes_-_Mario_Party.mid ");
+                    break;
+                case 19:
+                    canciones_que_quiere = canciones_que_quiere.concat("Vino_Tinto.mid ");
+                    break;
+                case 20:
+                    canciones_que_quiere = canciones_que_quiere.concat("Vivo_por_ella.mid ");
+                    break;
+                case 21:
+                    canciones_que_quiere = canciones_que_quiere.concat("dame_amor.mid ");
+                    break;
+                case 22:
+                    canciones_que_quiere = canciones_que_quiere.concat("lobo_hombre_en_Paris.mid ");
+                    break;
                 default:
                     System.out.println("Esta cancion no existe");
                     break;
