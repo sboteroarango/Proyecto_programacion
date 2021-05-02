@@ -54,7 +54,7 @@ import java.util.Scanner;
                     canciones_que_quiere = canciones_que_quiere.concat("Cielo.mid ");
                     break;
                 case 3:
-                    canciones_que_quiere = canciones_que_quiere.concat("Coldplay - Viva La Vida.mid ");
+                    canciones_que_quiere = canciones_que_quiere.concat("Viva_La_Vida.mid ");
                     break;
                 case 4:
                     canciones_que_quiere = canciones_que_quiere.concat("Como_Camaron.mid ");
@@ -121,8 +121,14 @@ import java.util.Scanner;
         return canciones_que_quiere;
     }
 
+    public static String[] lista_canciones(){
+        String lista = preguntar_segun_canciones_que_quiere();
+        String[] lista_de_canciones = lista.split(" ",0);
+        return lista_de_canciones;
+
+    }
+
     public static void main(String[] args){
-        String letra = preguntar_segun_canciones_que_quiere();
-        System.out.println(letra);
+
     }
 }
