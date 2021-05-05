@@ -114,7 +114,7 @@ import java.util.Scanner;
                     canciones_que_quiere = canciones_que_quiere.concat("lobo_hombre_en_Paris.mid ");
                     break;
                 default:
-                    System.out.println("Esta cancion no existe");
+                    System.out.println("Esta cancion no existe");//falta hacer que esta no cuente 
                     break;
             }
         }
@@ -128,7 +128,42 @@ import java.util.Scanner;
 
     }
 
+    public static void randomizar(String[] lista){
+        int numero_de_elementos = lista.length;
+        for(int i=0;i<numero_de_elementos;++i){
+            int numero_random = i+(int)(Math.random() * (numero_de_elementos-i));
+            String temporal = lista[numero_random];
+            lista[numero_random] = lista[i];
+            lista[i] = temporal;
+        }
+
+    }
+
+    public static String[] preguntar_con_randomizacion(){
+        String[] lista=lista_canciones();
+        String[] lista_randomizada = lista;
+        Scanner datos = new Scanner(System.in);
+        System.out.print("Desea el modo shuffle(si/no): ");
+        String respuesta = datos.nextLine();//no está leyendo si la respuesta es si o no
+        respuesta = respuesta.toLowerCase();
+        if (respuesta == "no"){
+            return lista;
+        }else{
+            randomizar(lista_randomizada);
+            return lista_randomizada;
+        }
+    }
+
+
     public static void main(String[] args){
+        String[] lista = preguntar_con_randomizacion();
+            for(int i=0;i<lista.length;i++){
+                System.out.println(lista[i]);
+            }
+
+
+
+
 
     }
 }
