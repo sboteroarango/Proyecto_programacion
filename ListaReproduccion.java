@@ -125,7 +125,6 @@ import java.util.Scanner;
         String lista = preguntar_segun_canciones_que_quiere();
         String[] lista_de_canciones = lista.split(" ",0);
         return lista_de_canciones;
-
     }
 
     public static void randomizar(String[] lista){
@@ -136,22 +135,18 @@ import java.util.Scanner;
             lista[numero_random] = lista[i];
             lista[i] = temporal;
         }
-
     }
 
     public static String[] preguntar_con_randomizacion(){
         String[] lista=lista_canciones();
-        String[] lista_randomizada = lista;
         Scanner datos = new Scanner(System.in);
         System.out.print("Desea el modo shuffle(si/no): ");
         String respuesta = datos.nextLine();//no está leyendo si la respuesta es si o no
         respuesta = respuesta.toLowerCase();
-        if (respuesta == "no"){
-            return lista;
-        }else{
-            randomizar(lista_randomizada);
-            return lista_randomizada;
+        if(respuesta=="si"){
+            randomizar(lista);
         }
+        return lista;
     }
 
 
@@ -160,10 +155,5 @@ import java.util.Scanner;
             for(int i=0;i<lista.length;i++){
                 System.out.println(lista[i]);
             }
-
-
-
-
-
     }
 }
