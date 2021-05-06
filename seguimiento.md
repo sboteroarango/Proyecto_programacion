@@ -47,3 +47,14 @@ Colocamos nuestro proyecto basado en funciones para dejar el main vacio, colocam
 Vamos a agregar la opcion de randomizar la lista, agregarle el titulo "AudioList" para que sea mas amigable y estudiar el repositorio grupal
 - ¿Que dificultades hemos tenido?
 Hasta el momento no tenemos total entendimiento de las funciones que Andres ha colocado en el repositorio grupal 
+
+## 06/05/21
+- ¿Qué hemos hecho?
+Agregamos la interfraz grafica y colocamos la opcion de randomizar la lista
+- ¿Que vamos a hacer?
+Vamos a buscar la forma de reproducir cada cancion e imprimir su letra
+- ¿Que dificultades hemos tenido?
+Hemos tenido dificultades en que el scanner no esta leyendo la respuesta que el usuario da a la pregunta de que si quiere randomizar o no.
+
+
+
