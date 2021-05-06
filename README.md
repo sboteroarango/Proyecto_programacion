@@ -1,11 +1,5 @@
 # Proyecto de Lógica de Programación
-  ____ __ __ ___   ____ ___  _     ____ ___________  
- /    |  |  |   \ |    /   \| |   |    / ___/      | 
-|  o  |  |  |    \ |  |     | |    |  (   \_|      | 
-|     |  |  |  D  ||  |  O  | |___ |  |\__  |_|  |_| 
-|  _  |  :  |     ||  |     |     ||  |/  \ | |  |__ 
-|  |  |     |     ||  |     |     ||  |\    | |  |  |
-|__|__|\__,_|_____|____\___/|_____|____|\___| |__|__|
+-El proyecto en si se llama AudioList.
 - ✨Este proyecto es realizado por **Esteban Alvarez**(https://github.com/H4ck3r-EsalvE) y **Simón Botero** (https://github.com/sboteroarango) guiados por el profesor **Andrés Bedoya**✨
 - 🟠Este trata de un reproductor de musica en el cual puedes elegir el orden de reproduccion si quieres escucharlo en lista🟠
 - 🌱Existe tambien la opcion de imprimir la letra en el reproductor solo si es de tu gusto.🌱
