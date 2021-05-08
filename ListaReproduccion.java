@@ -58,7 +58,7 @@ import java.util.Scanner;
         for(int i=0;i<numero_canciones_lista;i++){
             int numero_de_cancion = peticiondecanciones();
             switch (numero_de_cancion) {
-
+//colocar el indice de canción
                 case 1:
                     canciones_que_quiere = canciones_que_quiere.concat("A_Dios_le_pido.mid ");
                     break;
@@ -127,6 +127,7 @@ import java.util.Scanner;
                     break;
                 default:
                     System.out.println("Esta cancion no existe");//falta hacer que esta no cuente 
+                    i--;
                     break;
             }
         }
@@ -155,17 +156,31 @@ import java.util.Scanner;
         System.out.print("Desea el modo shuffle(si/no): ");
         String respuesta = datos.nextLine();//no está leyendo si la respuesta es si o no
         respuesta = respuesta.toLowerCase();
-        if(respuesta=="si"){
+        if(respuesta.equals("si")){
             randomizar(lista);
         }
         return lista;
+
+    }
+
+    public static void reproducir_lista(){
+        String[] lista= preguntar_con_randomizacion();
+        Audio audio = new Audio();
+        for(int i=0;i<lista.length;i++){
+            //reproducir lista[i](rutas)
+            audio.seleccionarCancion(info_canciones[indice_cancion][ConsoleData.RUTA_CANCION]);
+		audio.reproducir();
+
+        }
+
+
     }
 
 
     public static void main(String[] args){
-        String[] lista = preguntar_con_randomizacion();
-            for(int i=0;i<lista.length;i++){
-                System.out.println(lista[i]);
-            }
+
+
+
+
     }
 }
