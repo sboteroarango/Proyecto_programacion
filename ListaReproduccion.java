@@ -13,28 +13,28 @@ import java.util.Scanner;
         System.out.println("          |    |  |");
         System.out.println("          |       |");
         System.out.println("          |  |    |");          
-        System.out.println("          |  |    |   1. A dios le pido");
-        System.out.println("          |    |  |   2. Cielo");
-        System.out.println("          |    |  |   3. Viva la vida");
-        System.out.println("          |  |    |   4. Como camaron");
-        System.out.println("          |   ()  |   5. Cuando sea grande");
-        System.out.println("          |       |   6. Party up");
-        System.out.println("          |    |  |   7. Ruff ryders anthem");
+        System.out.println("          |  |    |   1. Rosas");
+        System.out.println("          |    |  |   2. Me gustas tu");
+        System.out.println("          |    |  |   3. Rayando el sol");
+        System.out.println("          |  |    |   4. A Dios le pido");
+        System.out.println("          |   ()  |   5. La camisa negra");
+        System.out.println("          |       |   6. Vivo por ella");
+        System.out.println("          |    |  |   7. Maldito duende");
         System.out.println("          |    |  |   8. En algun lugar");
-        System.out.println("          |    |  |   9. Friends");
-        System.out.println("          |   |   |   10. Maldito duende");
-        System.out.println("          |  |    |   11. La gasolina");
-        System.out.println("          | |     |   12. La camisa negra");
-        System.out.println("          |  |    |   13. Laura");
-        System.out.println("          |  |    |   14. Me gustas tu");
-        System.out.println("          |     ()|   15. Nada valgo sin tu amor");
-        System.out.println("          |       |   16. Rayando el sol");
-        System.out.println("          |   |   |   17. Rosas");
-        System.out.println("          | ()|   |   18. Mario party");
+        System.out.println("          |    |  |   9. Como camaron");
+        System.out.println("          |   |   |   10. Gasolina");
+        System.out.println("          |  |    |   11. Dame amor");
+        System.out.println("          | |     |   12. Laura");
+        System.out.println("          |  |    |   13. Nada valgo sin tu amor");
+        System.out.println("          |  |    |   14. Vinotinto");
+        System.out.println("          |     ()|   15. Cuando sea grande");
+        System.out.println("          |       |   16. Cielo");
+        /*System.out.println("          |   |   |   17. Rosas");
+        System.out.println("          | ()|   |   18. Vivalavida");
         System.out.println("          |   |   |   19. Vino tinto");
         System.out.println("          |   |   |   20. Vivo por ella");
         System.out.println("          |     ()|   21. Dame amor");
-        System.out.println("          |       |   22. Lobo hombre en paris");
+        System.out.println("          |       |   22. Lobo hombre en paris");*/
     }
 
     public static int peticiondecanciones(){
@@ -60,71 +60,63 @@ import java.util.Scanner;
             switch (numero_de_cancion) {
 //colocar el indice de canción
                 case 1:
-                    canciones_que_quiere = canciones_que_quiere.concat("A_Dios_le_pido.mid ");
+                    canciones_que_quiere = canciones_que_quiere.concat("0");
                     break;
                 case 2:
-                    canciones_que_quiere = canciones_que_quiere.concat("Cielo.mid ");
+                    canciones_que_quiere = canciones_que_quiere.concat("1");
                     break;
                 case 3:
-                    canciones_que_quiere = canciones_que_quiere.concat("Viva_La_Vida.mid ");
+                    canciones_que_quiere = canciones_que_quiere.concat("2");
                     break;
                 case 4:
-                    canciones_que_quiere = canciones_que_quiere.concat("Como_Camaron.mid ");
+                    canciones_que_quiere = canciones_que_quiere.concat("3");
                     break;
                 case 5:
-                    canciones_que_quiere = canciones_que_quiere.concat("Cuando_Sea_Grande.mid ");
+                    canciones_que_quiere = canciones_que_quiere.concat("4");
                     break;
                 case 6:
-                    canciones_que_quiere = canciones_que_quiere.concat("DMX_-_Party_Up.mid ");
+                    canciones_que_quiere = canciones_que_quiere.concat("5");
                     break;
                 case 7:
-                    canciones_que_quiere = canciones_que_quiere.concat("DMX_–_Ruff_Ryders_Anthem.mid ");
+                    canciones_que_quiere = canciones_que_quiere.concat("6");
                     break;
                 case 8:
-                    canciones_que_quiere = canciones_que_quiere.concat("En_algun_lugar.mid ");
+                    canciones_que_quiere = canciones_que_quiere.concat("7");
                     break;
                 case 9:
-                    canciones_que_quiere = canciones_que_quiere.concat("Friends.mid ");
+                    canciones_que_quiere = canciones_que_quiere.concat("8");
                     break;
                 case 10:
-                    canciones_que_quiere = canciones_que_quiere.concat("HEROES_DEL_SILENCIO_-_Maldito_duende.mid ");
+                    canciones_que_quiere = canciones_que_quiere.concat("9");
                     break;
                 case 11:
-                    canciones_que_quiere = canciones_que_quiere.concat("La_Gasolina.mid ");
+                    canciones_que_quiere = canciones_que_quiere.concat("10");
                     break;
                 case 12:
-                    canciones_que_quiere = canciones_que_quiere.concat("La_camisa_negra.mid ");
+                    canciones_que_quiere = canciones_que_quiere.concat("11");
                     break;
                 case 13:
-                    canciones_que_quiere = canciones_que_quiere.concat("Laura.mid ");
+                    canciones_que_quiere = canciones_que_quiere.concat("12");
                     break;
                 case 14:
-                    canciones_que_quiere = canciones_que_quiere.concat("Me_gustas_tu.mid ");
+                    canciones_que_quiere = canciones_que_quiere.concat("13");
                     break;
                 case 15:
-                    canciones_que_quiere = canciones_que_quiere.concat("Nada_valgo_sin_tu_amor.mid ");
+                    canciones_que_quiere = canciones_que_quiere.concat("14");
                     break;
                 case 16:
-                    canciones_que_quiere = canciones_que_quiere.concat("Rayando_el_sol.mid ");
+                    canciones_que_quiere = canciones_que_quiere.concat("15");
                     break;
-                case 17:
-                    canciones_que_quiere = canciones_que_quiere.concat("Rosas.mid ");
-                    break;
-                case 18:
-                    canciones_que_quiere = canciones_que_quiere.concat("Video_Game_Themes_-_Mario_Party.mid ");
-                    break;
-                case 19:
-                    canciones_que_quiere = canciones_que_quiere.concat("Vino_Tinto.mid ");
-                    break;
-                case 20:
-                    canciones_que_quiere = canciones_que_quiere.concat("Vivo_por_ella.mid ");
-                    break;
-                case 21:
-                    canciones_que_quiere = canciones_que_quiere.concat("dame_amor.mid ");
-                    break;
-                case 22:
-                    canciones_que_quiere = canciones_que_quiere.concat("lobo_hombre_en_Paris.mid ");
-                    break;
+                
+                /*case 3:
+                    canciones_que_quiere = canciones_que_quiere.concat("Viva_La_Vida.mid ");
+                    break; */
+               
+               // case 22:
+                 //   canciones_que_quiere = canciones_que_quiere.concat("lobo_hombre_en_Paris.mid ");
+                   // break; 
+
+                   //Falta agregar "Raja de tu falda-16" al menu y quitar las canciones que no se van a utilizar del menu
                 default:
                     System.out.println("Esta cancion no existe");//falta hacer que esta no cuente 
                     i--;
