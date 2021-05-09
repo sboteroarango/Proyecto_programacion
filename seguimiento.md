@@ -56,5 +56,13 @@ Vamos a buscar la forma de reproducir cada cancion e imprimir su letra
 - ¿Que dificultades hemos tenido?
 Hemos tenido dificultades en que el scanner no esta leyendo la respuesta que el usuario da a la pregunta de que si quiere randomizar o no.
 
+## 09/05/21
+- ¿Qué hemos hecho?
+Agregamos el indice de las canciones, agregamos tambien algunos archivos para lograr reproducir las canciones y mostrar la letra con tildes incluidas, por ultimo, logramos hacer que el proyecto AudioList. funcione satisfactoriamente.
+- ¿Que vamos a hacer?
+Un video y una presentacion para exponer el proyecto correctamente.
+- ¿Que dificultades hemos tenido?
+Ya fueron solucionadas las dificultades que habiamos tenido.
+
 
 
