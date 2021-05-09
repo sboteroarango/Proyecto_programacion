@@ -1,4 +1,8 @@
 import java.util.Scanner;
+import org.fusesource.jansi.AnsiConsole;
+import static org.fusesource.jansi.Ansi.*;
+import static org.fusesource.jansi.Ansi.Color.*;
+
     public class ListaReproduccion{
     public static void menu(){
         System.out.println("          | o     |");
@@ -37,17 +41,73 @@ import java.util.Scanner;
         System.out.println("          |     ()|   21. Dame amor");
         System.out.println("          |       |   22. Lobo hombre en paris");*/
     }
+    public static String convertirUnicode(String letra,String cadena){
+		
+		StringBuilder str = new StringBuilder(cadena);
+		int indice = -1;
+		char caracter = 0;
+		indice = str.lastIndexOf(letra);
+		
+		if(indice>=0 )
+		{
+			switch(letra){
+				case "Á": caracter = '\u00C1';
+						  break;
+				case "á": caracter = '\u00E1';
+					      break;
+				case "é": caracter = '\u00E9';
+					      break;
+				case "í": caracter = '\u00ED';
+					      break;
+		        case "ó": caracter = '\u00F3';
+					      break;
+			    case "ú": caracter = '\u00FA';
+					      break;
+				case "ñ": caracter = '\u00F1';
+					      break;
+			}
+			str.replace(indice,indice+1,""+caracter);
+		}
+
+		return str.toString();
+	}
+
+    public static void imprimir(String cadena)
+	{
+		String str; 
+		str = convertirUnicode("Á",cadena);
+		str = convertirUnicode("á",str);
+		str = convertirUnicode("é",str);
+		str = convertirUnicode("í",str);
+		str = convertirUnicode("ó",str);
+		str = convertirUnicode("ú",str);
+		str = convertirUnicode("ñ",str);
+
+		System.out.println(str);
+	}
+
+    public static StringBuilder obtenerLetraCancion(int inicio,int fin, String[]data)
+	{
+		StringBuilder str = new StringBuilder();
+
+		for(int i = inicio; i<=fin; i++)
+		{
+			str.append(data[i]+"\n");
+		}
+
+		return str;
+	}
 
     public static int peticiondecanciones(){
         Scanner datos = new Scanner(System.in);
-        System.out.print("Ingrese el numero de la cancion: ");
+        imprimir("Ingrese el numero de la canción: ");
         int numero_de_cancion = datos.nextInt();
         return numero_de_cancion;
 	}
 
 	public static int numero_canciones(){
 		Scanner datos = new Scanner(System.in);
-		System.out.print("Cuantas canciones desea en su lista de reproduccion: ");
+		imprimir("Cuantas canciones desea en su lista de reproducción: ");
 		int numero_canciones_lista = datos.nextInt();
 		return numero_canciones_lista;
 	}
@@ -59,7 +119,7 @@ import java.util.Scanner;
         for(int i=0;i<numero_canciones_lista;i++){
             int numero_de_cancion = peticiondecanciones();
             switch (numero_de_cancion) {
-//colocar el indice de canción
+
                 case 1:
                     canciones_que_quiere = canciones_que_quiere.concat("0 ");
                     break;
@@ -122,7 +182,7 @@ import java.util.Scanner;
 
                    //Falta agregar "Raja de tu falda-16" al menu y quitar las canciones que no se van a utilizar del menu
                 default:
-                    System.out.println("Esta cancion no existe");//falta hacer que esta no cuente 
+                    System.out.println("Esta cancion no existe");
                     i--;
                     break;
             }
@@ -167,23 +227,48 @@ import java.util.Scanner;
         return listaint;
     }
 
-    public static void reproducir_lista(){
+    public static void audiolist(){
+        String [] canciones;
+        int inicio_letra = 0, fin_letra = 0;
+        canciones = ConsoleFile.readBigFile("recursos/letras.csv");
+        String [][] info_canciones;
+        StringBuilder letra_cancion;
+        info_canciones = ConsoleData.dataList(canciones);
         String[] lista= preguntar_con_randomizacion();
+        int[] listaint = convertir_lista_a_int(lista);
         Audio audio = new Audio();
-        for(int i=0;i<lista.length;i++){
-            //reproducir lista[i](rutas)
-            audio.seleccionarCancion(info_canciones[indice_cancion][ConsoleData.RUTA_CANCION]);
-		audio.reproducir();
+        try {
+            for(int i=0;i<listaint.length;i++){
+                audio.seleccionarCancion(info_canciones[listaint[i]][ConsoleData.RUTA_CANCION]);
+                audio.reproducir();
+                if(i<listaint.length-1){
+                    imprimir("Al terminarse esta canción, tu siguiente canción se reproducirá en unos segundos");
+                }
+                Scanner datos = new Scanner(System.in);
+                System.out.print("desea ver la letra de la canción(si/no): ");
+                String respuesta = datos.nextLine();
+                respuesta = respuesta.toLowerCase();
+                if(respuesta.equals("si")){
+                    inicio_letra = ConsoleInput.stringToInt(info_canciones[listaint[i]][ConsoleData.INICIO_CANCION]);
+					fin_letra = ConsoleInput.stringToInt(info_canciones[listaint[i]][ConsoleData.FIN_CANCION]);
+					
+					letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
 
-        }
+					imprimir(letra_cancion.toString());
 
+                }
 
+                Thread.sleep(1000*290);
+                audio.detener();
+        }}
+        catch (Exception e) {
+        imprimir("este ha sido el error de ejecución del programa: "+e);
+    }
     }
 
 
     public static void main(String[] args){
+        audiolist();
         
-
-
     }
 }
