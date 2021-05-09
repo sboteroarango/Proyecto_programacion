@@ -29,6 +29,7 @@ import java.util.Scanner;
         System.out.println("          |  |    |   14. Vinotinto");
         System.out.println("          |     ()|   15. Cuando sea grande");
         System.out.println("          |       |   16. Cielo");
+        System.out.println("          |       |   17. La raja de tu falda");
         /*System.out.println("          |   |   |   17. Rosas");
         System.out.println("          | ()|   |   18. Vivalavida");
         System.out.println("          |   |   |   19. Vino tinto");
@@ -60,52 +61,55 @@ import java.util.Scanner;
             switch (numero_de_cancion) {
 //colocar el indice de canción
                 case 1:
-                    canciones_que_quiere = canciones_que_quiere.concat("0");
+                    canciones_que_quiere = canciones_que_quiere.concat("0 ");
                     break;
                 case 2:
-                    canciones_que_quiere = canciones_que_quiere.concat("1");
+                    canciones_que_quiere = canciones_que_quiere.concat("1 ");
                     break;
                 case 3:
-                    canciones_que_quiere = canciones_que_quiere.concat("2");
+                    canciones_que_quiere = canciones_que_quiere.concat("2 ");
                     break;
                 case 4:
-                    canciones_que_quiere = canciones_que_quiere.concat("3");
+                    canciones_que_quiere = canciones_que_quiere.concat("3 ");
                     break;
                 case 5:
-                    canciones_que_quiere = canciones_que_quiere.concat("4");
+                    canciones_que_quiere = canciones_que_quiere.concat("4 ");
                     break;
                 case 6:
-                    canciones_que_quiere = canciones_que_quiere.concat("5");
+                    canciones_que_quiere = canciones_que_quiere.concat("5 ");
                     break;
                 case 7:
-                    canciones_que_quiere = canciones_que_quiere.concat("6");
+                    canciones_que_quiere = canciones_que_quiere.concat("6 ");
                     break;
                 case 8:
-                    canciones_que_quiere = canciones_que_quiere.concat("7");
+                    canciones_que_quiere = canciones_que_quiere.concat("7 ");
                     break;
                 case 9:
-                    canciones_que_quiere = canciones_que_quiere.concat("8");
+                    canciones_que_quiere = canciones_que_quiere.concat("8 ");
                     break;
                 case 10:
-                    canciones_que_quiere = canciones_que_quiere.concat("9");
+                    canciones_que_quiere = canciones_que_quiere.concat("9 ");
                     break;
                 case 11:
-                    canciones_que_quiere = canciones_que_quiere.concat("10");
+                    canciones_que_quiere = canciones_que_quiere.concat("10 ");
                     break;
                 case 12:
-                    canciones_que_quiere = canciones_que_quiere.concat("11");
+                    canciones_que_quiere = canciones_que_quiere.concat("11 ");
                     break;
                 case 13:
-                    canciones_que_quiere = canciones_que_quiere.concat("12");
+                    canciones_que_quiere = canciones_que_quiere.concat("12 ");
                     break;
                 case 14:
-                    canciones_que_quiere = canciones_que_quiere.concat("13");
+                    canciones_que_quiere = canciones_que_quiere.concat("13 ");
                     break;
                 case 15:
-                    canciones_que_quiere = canciones_que_quiere.concat("14");
+                    canciones_que_quiere = canciones_que_quiere.concat("14 ");
                     break;
                 case 16:
-                    canciones_que_quiere = canciones_que_quiere.concat("15");
+                    canciones_que_quiere = canciones_que_quiere.concat("15 ");
+                    break;
+                case 17:
+                    canciones_que_quiere = canciones_que_quiere.concat("16 ");
                     break;
                 
                 /*case 3:
@@ -146,13 +150,21 @@ import java.util.Scanner;
         String[] lista=lista_canciones();
         Scanner datos = new Scanner(System.in);
         System.out.print("Desea el modo shuffle(si/no): ");
-        String respuesta = datos.nextLine();//no está leyendo si la respuesta es si o no
+        String respuesta = datos.nextLine();
         respuesta = respuesta.toLowerCase();
         if(respuesta.equals("si")){
             randomizar(lista);
         }
         return lista;
 
+    }
+
+    public static int[] convertir_lista_a_int(String[] lista){
+        int[] listaint = new int[lista.length];
+        for(int i=0;i<lista.length;i++){
+            listaint[i] = Integer.parseInt(lista[i]);
+        }
+        return listaint;
     }
 
     public static void reproducir_lista(){
@@ -170,8 +182,7 @@ import java.util.Scanner;
 
 
     public static void main(String[] args){
-
-
+        
 
 
     }
