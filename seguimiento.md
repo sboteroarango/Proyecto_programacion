@@ -64,5 +64,12 @@ Un video y una presentacion para exponer el proyecto correctamente.
 - ¿Que dificultades hemos tenido?
 Ya fueron solucionadas las dificultades que habiamos tenido.
 
+## 19/05/21
+- ¿Que hemos hecho?
+Terminamos el proyecto, la presentación y el video
+- ¿Que vamos a hacer?
+ Hacer la presentación final del proyecto.
+- ¿Que dificultades hemos tenido?
+Ninguna. 
 
-
+<3 Gracias <3
