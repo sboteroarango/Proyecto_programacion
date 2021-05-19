@@ -72,4 +72,4 @@ Terminamos el proyecto, la presentación y el video
 - ¿Que dificultades hemos tenido?
 Ninguna. 
 
-<3 Gracias <3
+## <3 Gracias <3
