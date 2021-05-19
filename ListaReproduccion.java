@@ -2,6 +2,7 @@ import java.util.Scanner;
 import org.fusesource.jansi.AnsiConsole;
 import static org.fusesource.jansi.Ansi.*;
 import static org.fusesource.jansi.Ansi.Color.*;
+import java.util.*;
 
     public class ListaReproduccion{
     public static void menu(){
@@ -34,12 +35,12 @@ import static org.fusesource.jansi.Ansi.Color.*;
         System.out.println("          |     ()|   15. Cuando sea grande");
         System.out.println("          |       |   16. Cielo");
         System.out.println("          |       |   17. La raja de tu falda");
-        /*System.out.println("          |   |   |   17. Rosas");
-        System.out.println("          | ()|   |   18. Vivalavida");
-        System.out.println("          |   |   |   19. Vino tinto");
-        System.out.println("          |   |   |   20. Vivo por ella");
-        System.out.println("          |     ()|   21. Dame amor");
-        System.out.println("          |       |   22. Lobo hombre en paris");*/
+        System.out.println("          |   |   |   18. Hijo de la luna");
+        System.out.println("          | ()|   |   19. Musica Ligera");
+        System.out.println("          |   |   |   20. Oye mi amor");
+        //System.out.println("          |   |   |   20. Vivo por ella");
+        //System.out.println("          |     ()|   21. Dame amor");
+        //System.out.println("          |       |   22. Lobo hombre en paris");*/
     }
     public static String convertirUnicode(String letra,String cadena){
 		
@@ -89,13 +90,21 @@ import static org.fusesource.jansi.Ansi.Color.*;
     public static StringBuilder obtenerLetraCancion(int inicio,int fin, String[]data)
 	{
 		StringBuilder str = new StringBuilder();
+		StringTokenizer temp;
 
 		for(int i = inicio; i<=fin; i++)
 		{
-			str.append(data[i]+"\n");
-		}
+			//System.out.println("@  "+data[i]);
 
-		return str;
+			temp = new StringTokenizer(data[i],";");
+
+			while(temp.hasMoreTokens())
+			{
+				System.out.print(temp.nextToken()+" ");
+			}
+			System.out.println();
+        }
+        return str;
 	}
 
     public static int peticiondecanciones(){
@@ -171,16 +180,16 @@ import static org.fusesource.jansi.Ansi.Color.*;
                 case 17:
                     canciones_que_quiere = canciones_que_quiere.concat("16 ");
                     break;
-                
-                /*case 3:
-                    canciones_que_quiere = canciones_que_quiere.concat("Viva_La_Vida.mid ");
-                    break; */
-               
-               // case 22:
-                 //   canciones_que_quiere = canciones_que_quiere.concat("lobo_hombre_en_Paris.mid ");
-                   // break; 
+                case 18:
+                    canciones_que_quiere = canciones_que_quiere.concat("17 ");
+                    break;
+                case 19:
+                    canciones_que_quiere = canciones_que_quiere.concat("18 ");
+                    break;
+                case 20:
+                    canciones_que_quiere = canciones_que_quiere.concat("19 ");
+                    break;
 
-                   //Falta agregar "Raja de tu falda-16" al menu y quitar las canciones que no se van a utilizar del menu
                 default:
                     System.out.println("Esta cancion no existe");
                     i--;
@@ -254,7 +263,7 @@ import static org.fusesource.jansi.Ansi.Color.*;
 					
 					letra_cancion = obtenerLetraCancion(inicio_letra,fin_letra,canciones);
 
-					imprimir(letra_cancion.toString());
+					//imprimir(letra_cancion.toString());
 
                 }
 
