@@ -3,7 +3,7 @@
 - 🟠Este trata de un reproductor de musica en el cual puedes elegir el orden de reproduccion si quieres escucharlo en lista o en modo shuffle🟠
 - 🌱Existe tambien la opcion de imprimir la letra en el reproductor solo si es de tu gusto.🌱
 
-## Video de como funciona (:D)
+## How it function (:D)
 https://youtu.be/A1nOVijrtMU
 
 ## Recursos 
